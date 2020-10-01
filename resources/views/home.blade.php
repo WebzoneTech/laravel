@@ -16,7 +16,7 @@
 
                     {{ __('You are logged in!') }}
                     @if (Auth::user()->hasrole('Super Admin'))
-                        <h2>You are the Super Admin.</h2>
+                        <h2>You are thee Super Admin.</h2>
                     @elseif (Auth::user()->hasrole('News Editor'))
                         <h2>Welcome News Editor</h2>
                     @elseif (Auth::user()->hasrole('Event Editor'))

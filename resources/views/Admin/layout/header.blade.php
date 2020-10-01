@@ -70,7 +70,7 @@
 				</button>
 
 				<div class="navbar-header pull-left">
-					<a href="{{ route('admin.offer-editor.offer.index') }}" class="navbar-brand">
+					<a href="" class="navbar-brand">
 						<small>
 							Qabuss
 						</small>
@@ -113,12 +113,12 @@
 								<li class="divider"></li>
 
 								<li>
-									<a href="{{ route('admin.logout') }}" onclick="event.preventDefault();
+									<a href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
 										<i class="ace-icon fa fa-power-off"></i>
 										Logout
 									</a>
-                                    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" style="display: none;">
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                         @csrf
                                     </form>
 								</li>

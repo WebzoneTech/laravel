@@ -1,10 +1,10 @@
 
 	<!-- header -->
-		@include('admin.SuperAdmin.layout.header')
+		@include('Admin.layout.header')
 	<!-- header -->
 
 	<!-- navigation -->
-		@include('admin.SuperAdmin.layout.nav')
+		@include('Admin.layout.nav')
 	<!-- navigation -->
 
 	<!-- content -->
@@ -12,5 +12,5 @@
 	<!-- content -->
 
 	<!-- footer -->
-		@include('admin.SuperAdmin.layout.footer')
+		@include('Admin.layout.footer')
 	<!-- footer -->

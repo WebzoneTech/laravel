@@ -21,7 +21,7 @@
 
       <ul class="submenu">
         <li class="">
-        <a href="{{ route('admin.super-admin.user.index') }}">
+        <a href="">
             <i class="menu-icon fa fa-caret-right"></i>
             Adding Member
           </a>
@@ -30,7 +30,7 @@
         </li>
 
         <li class="">
-        <a href="{{ route('admin.super-admin.user.index') }}">
+        <a href="">
             <i class="menu-icon fa fa-caret-right"></i>
             View Users
           </a>
@@ -38,7 +38,7 @@
           <b class="arrow"></b>
         </li>
         <li class="">
-        <a href="{{ route('admin.super-admin.user.index') }}">
+        <a href="">
             <i class="menu-icon fa fa-caret-right"></i>
             View Editors
           </a>
