@@ -15,6 +15,19 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    @if (Auth::user()->hasrole('Super Admin'))
+                        <h2>You are the Super Admin.</h2>
+                    @elseif (Auth::user()->hasrole('News Editor'))
+                        <h2>Welcome News Editor</h2>
+                    @elseif (Auth::user()->hasrole('Event Editor'))
+                        <h2>Welcome Event Editor</h2>
+                    @elseif (Auth::user()->hasrole('Offer Editor'))
+                        <h2>Welcome Offer Editor</h2>
+                    @elseif (Auth::user()->hasrole('Business Editor'))
+                        <h2>Welcome Business Editor</h2>
+                    @else
+                        <h2>You don't have any role</h2>
+                    @endif
                 </div>
             </div>
         </div>
