@@ -16,11 +16,39 @@ class UserSeeder extends Seeder
         
         $admin = User::create([
             'id'                => 1,
-            'name'              => 'Administrator',
-            'email'             => 'admin@stalza.com',
-            'password'          => bcrypt('password'),
+            'name'              => 'Admin',
+            'email'             => 'admin@qabuss.com',
+            'password'          => bcrypt('Qabuss@2k22'),
+        ]);
+        $news = User::create([
+            'id'                => 2,
+            'name'              => 'News Editor',
+            'email'             => 'news@qabuss.com',
+            'password'          => bcrypt('Qabuss@2k22'),
+        ]);
+        $event = User::create([
+            'id'                => 3,
+            'name'              => 'Event Editor',
+            'email'             => 'event@qabuss.com',
+            'password'          => bcrypt('Qabuss@2k22'),
+        ]);
+        $offer = User::create([
+            'id'                => 4,
+            'name'              => 'Offer Editor',
+            'email'             => 'offer@qabuss.com',
+            'password'          => bcrypt('Qabuss@2k22'),
+        ]);
+        $business = User::create([
+            'id'                => 5,
+            'name'              => 'Business Editor',
+            'email'             => 'business@qabuss.com',
+            'password'          => bcrypt('Qabuss@2k22'),
         ]);
         $admin->assignRole('Super Admin');
+        $news->assignRole('News Editor');
+        $event->assignRole('Event Editor');
+        $offer->assignRole('Offer Editor');
+        $business->assignRole('Business Editor');
 
         $this->command->info('** Completed Seeding for Users **');
     }

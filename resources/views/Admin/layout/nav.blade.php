@@ -21,7 +21,7 @@
 
       <ul class="submenu">
         <li class="">
-        <a href="">
+        <a href="{{ route('user.create') }}">
             <i class="menu-icon fa fa-caret-right"></i>
             Adding Member
           </a>
@@ -30,17 +30,39 @@
         </li>
 
         <li class="">
-        <a href="">
+        <a href="{{ route('user.index') }}">
             <i class="menu-icon fa fa-caret-right"></i>
             View Users
           </a>
 
           <b class="arrow"></b>
         </li>
+      </ul>
+    </li>
+
+    <li class="">
+      <a href="#" class="dropdown-toggle">
+      <i class="menu-icon fa fa-id-card"></i>
+        <span class="menu-text"> Role </span>
+        <b class="arrow fa fa-angle-down"></b>
+      </a>
+
+      <b class="arrow"></b>
+
+      <ul class="submenu">
         <li class="">
         <a href="">
             <i class="menu-icon fa fa-caret-right"></i>
-            View Editors
+            Adding Role
+          </a>
+
+          <b class="arrow"></b>
+        </li>
+
+        <li class="">
+        <a href="">
+            <i class="menu-icon fa fa-caret-right"></i>
+            Permission
           </a>
 
           <b class="arrow"></b>
