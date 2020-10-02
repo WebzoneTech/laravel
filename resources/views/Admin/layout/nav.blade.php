@@ -42,7 +42,7 @@
 
     <li class="">
       <a href="#" class="dropdown-toggle">
-      <i class="menu-icon fa fa-id-card"></i>
+      <i class="menu-icon fa fa-lock"></i>
         <span class="menu-text"> Role </span>
         <b class="arrow fa fa-angle-down"></b>
       </a>
@@ -51,7 +51,7 @@
 
       <ul class="submenu">
         <li class="">
-        <a href="">
+        <a href="{{ route('user.index') }}">
             <i class="menu-icon fa fa-caret-right"></i>
             Adding Role
           </a>
@@ -60,9 +60,9 @@
         </li>
 
         <li class="">
-        <a href="">
+        <a href="{{ route('role.index') }}">
             <i class="menu-icon fa fa-caret-right"></i>
-            Permission
+            View Roles
           </a>
 
           <b class="arrow"></b>

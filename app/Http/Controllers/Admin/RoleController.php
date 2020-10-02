@@ -8,7 +8,7 @@ use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 use App\Http\Models\Admin\User;
 
-class UserController extends Controller
+class RoleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +18,8 @@ class UserController extends Controller
     public function index()
     {
         $data = [];
-        $data['user'] = User::all();
-        return view('Admin.User.index', $data);
+        $data['user'] = Role::all();
+        return view('Admin.Role.index', $data);
     }
 
     /**
@@ -29,9 +29,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $data = [];
-        $data['user'] = Role::all();
-        return view('Admin.User.AddUser', $data);
+        //
     }
 
     /**

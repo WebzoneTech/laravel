@@ -61,11 +61,11 @@
                       <div class="form-elements col-md-8 col-sm-12">
                         <label class="col-sm-3 control-label no-padding-right" >User Type </label>
                         <div class="col-sm-9">
-                          <select id="role" name="role" class="textcls">
-                            <option value="user">User</option>
-                            <option value="client">Client</option>
-                            <option value="admin">Admin</option>
-                            <option value="superadmin">SuperAdmin</option>
+                            <select id="role" name="role" class="textcls">
+                                <option disabled selected>Select Type</option>
+                                @foreach($user as $userinfo)
+                                    <option value="{{ $userinfo->id}}">{{ $userinfo->name}}</option>
+                                @endforeach
                           </select>                        
                         </div>
                       </div>
