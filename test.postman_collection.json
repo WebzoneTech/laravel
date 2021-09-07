@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "01646663-d12c-41b4-92c3-24fe3e249767",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@larvel.com\",\r\n    \"password\":\"Laravel@2k22\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "non authenticated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/testnonauth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"testnonauth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticated",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hdXRoXC9sb2dpbiIsImlhdCI6MTYzMTAyMjQyOCwiZXhwIjoxNjMxMDI2MDI4LCJuYmYiOjE2MzEwMjI0MjgsImp0aSI6IkVQeFNhMmgwbldJT2E3S1UiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.gYQYnJzCswTHkHIJq6coJo7LNUPKB45VXoOPPsQihqo",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDI0MzA4OWJkNzFmYTZhZWQwMjJmOGJiMTEyOGVkODNmOTQzODE4ODAxN2IzNTI4OWRmNGIxYzk0NzAxZTgwYjJhNGRiYzFmZDUyNDVlNzYiLCJpYXQiOjE2Mjg3NjUwODIsIm5iZiI6MTYyODc2NTA4MiwiZXhwIjoxNjYwMzAxMDgyLCJzdWIiOiIxMjQiLCJzY29wZXMiOltdfQ.UFKbYLo7tPUmDQg3sDyGNMgeW3d27FPwYTltQsApBxEOtd90dhFkeoolZKZQ0z0tn-U24Ms08OlrwrXH46NWkAji_7JoTBJe9y8Iqgv5eWhyS5sF5Jfo2vmyBfX7Uv7MEF9lK6fVEZUtUYxQtEoNpB3dol6LXrpZHBFtnEQFbZW0CIgLwD7mEP8rOCPmQvfoq7gV8_k7_Yvi36NabQNnh2eqrH9hrh9ilz4BD48daqXCDVa2IVeBTo3uTtoAQvor107xCMWFwkLsaFLhoTr9-v0CY7xOoxCbCwWpmSVo7xpGYBU4rpZTq0pi-dEEoRyu_kvJ8lDe8kP0O3umaHhtQVxWRad1aCn6duLBmxaWtw7AZSoEumdJek_o_vGFEdr4a2AYJmc6d37BOTkImP-CK6Yo3gfvp7ZQma1wGTv5scvEc6OWQdCzSVEZdT4WBE5tlb_ZCGnk2TjMKp52J211GSS6F5yN9MCRjre7o4ncnXLcO6yeJx01unFaO_g_bW-wrLbM6n35B7tCPzNnuvV2k_yrln2ATLvqxAUJ5ZFFTignYlITt2sONEu_Ux1qBcYnQS-SFJ_oL4qFaLk7bwQ5vB__eWCyfN0H_Pxw77btRM9ucTQdfDr8wSCTr7WfTsycTHPHchA3eLgQ6HpnIJxyb2PJcHAYILDAt7evQah_wHE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
